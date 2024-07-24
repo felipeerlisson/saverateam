@@ -76,4 +76,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     event.target.value = formatted.trim();
   });
+
+
+  // ANTES E DEPOIS 
+  document.addEventListener('DOMContentLoaded', function () {
+    const sliders = document.querySelectorAll('.before-after-slider');
+    sliders.forEach(slider => {
+      const container = slider.parentElement;
+      const beforeImg = container.querySelector('.before-img');
+      const afterImg = container.querySelector('.after-img');
+      
+      let isDragging = false;
+      
+      slider.addEventListener('mousedown', () => isDragging = true);
+      slider.addEventListener('mouseup', () => isDragging = false);
+      slider.addEventListener('mousemove', (event) => {
+        if (isDragging) {
+          const containerRect = container.getBoundingClientRect();
+          const offsetX = event.clientX - containerRect.left;
+          const percentage = Math.min(Math.max(offsetX / containerRect.width, 0), 1);
+          slider.style.width = `${percentage * 100}%`;
+          afterImg.style.clip = `rect(0, ${percentage * 100}%, auto, 0)`;
+        }
+      });
+    });
+  });
+  
   

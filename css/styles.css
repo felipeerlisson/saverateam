@@ -15,6 +15,22 @@ body {
     display: block; /* Faz com que o padding funcione */
 }
 
+/* Adiciona um espaço extra no topo para compensar a navbar fixa */
+.anchor-offset-parcerias {
+  padding-top: 70px; /* Ajuste a altura conforme necessário */
+  margin-top: -20px; /* Ajuste a altura conforme necessário */
+  display: block; /* Faz com que o padding funcione */
+}
+
+/* Adiciona um espaço extra no topo para compensar a navbar fixa */
+.anchor-offset-antesedepois {
+  padding-top: 70px; /* Ajuste a altura conforme necessário */
+  margin-top: -20px; /* Ajuste a altura conforme necessário */
+  display: block; /* Faz com que o padding funcione */
+}
+
+
+
 
 .logo-section {
     position: relative;
@@ -203,47 +219,62 @@ ul.list-unstyled li {
   
   
 
-/* Antes e Depois */
+/* Antes e Depois Section */
+#beforeAfter {
+  background-color: #f8f9fa; /* Fundo claro */
+}
+
 .before-after-container {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  
-  .before-after-wrapper {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .before-img, .after-img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .after-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip: rect(0, 50%, 100%, 0);
-    transition: clip 0.3s ease;
-  }
-  
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.before-after-wrapper {
+  position: relative;
+}
+
+.before-img, .after-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.before-after-slider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Cor do slider */
+  cursor: ew-resize;
+  z-index: 2;
+}
+
+.before-after-slider:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Adiciona uma sombra leve às imagens para destacar */
+.before-img, .after-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
   .before-after-slider {
-    position: absolute;
-    top: 0;
-    left: 50%;
     width: 2px;
-    height: 100%;
-    background: #f00;
-    cursor: ew-resize;
-    transform: translateX(-50%);
   }
-  
-  .before-after-container:hover .before-after-slider {
-    background: #000;
-  }
+}
+
+
   
   .hero {
     background-color: #f8f9fa;
