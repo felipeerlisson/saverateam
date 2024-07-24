@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-  // ANTES E DEPOIS 
   document.addEventListener('DOMContentLoaded', function () {
     const containers = document.querySelectorAll('.before-after-container');
   
@@ -100,7 +99,30 @@ document.addEventListener('DOMContentLoaded', function() {
       const slider = container.querySelector('.before-after-slider');
       let isDragging = false;
   
+      const updateSlider = (x) => {
+        x = Math.max(0, Math.min(x, container.offsetWidth));
+        beforeWrapper.style.width = `${x}px`;
+        slider.style.left = `${x}px`;
+      };
+  
+      const onMouseMove = (e) => {
+        if (!isDragging) return;
+        const rect = container.getBoundingClientRect();
+        updateSlider(e.clientX - rect.left);
+      };
+  
+      const onTouchMove = (e) => {
+        if (!isDragging) return;
+        const rect = container.getBoundingClientRect();
+        const touch = e.touches[0];
+        updateSlider(touch.clientX - rect.left);
+      };
+  
       slider.addEventListener('mousedown', () => {
+        isDragging = true;
+      });
+  
+      slider.addEventListener('touchstart', () => {
         isDragging = true;
       });
   
@@ -108,14 +130,13 @@ document.addEventListener('DOMContentLoaded', function() {
         isDragging = false;
       });
   
-      document.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-        const rect = container.getBoundingClientRect();
-        let x = e.clientX - rect.left;
-        x = Math.max(0, Math.min(x, rect.width));
-        beforeWrapper.style.width = `${x}px`;
-        slider.style.left = `${x}px`;
+      document.addEventListener('touchend', () => {
+        isDragging = false;
       });
+  
+      document.addEventListener('mousemove', onMouseMove);
+      document.addEventListener('touchmove', onTouchMove);
     });
   });
+  
   
