@@ -80,26 +80,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ANTES E DEPOIS 
   document.addEventListener('DOMContentLoaded', function () {
-    const sliders = document.querySelectorAll('.before-after-slider');
-    sliders.forEach(slider => {
-      const container = slider.parentElement;
-      const beforeImg = container.querySelector('.before-img');
-      const afterImg = container.querySelector('.after-img');
-      
+    const containers = document.querySelectorAll('.before-after-container');
+  
+    containers.forEach(container => {
+      const beforeImageSrc = container.getAttribute('data-before');
+      const afterImageSrc = container.getAttribute('data-after');
+  
+      const beforeWrapper = document.createElement('div');
+      beforeWrapper.classList.add('before-after-wrapper');
+      const beforeImage = document.createElement('img');
+      beforeImage.src = beforeImageSrc;
+      beforeWrapper.appendChild(beforeImage);
+  
+      const afterImage = document.createElement('img');
+      afterImage.src = afterImageSrc;
+      container.appendChild(afterImage);
+      container.appendChild(beforeWrapper);
+  
+      const slider = container.querySelector('.before-after-slider');
       let isDragging = false;
-      
-      slider.addEventListener('mousedown', () => isDragging = true);
-      slider.addEventListener('mouseup', () => isDragging = false);
-      slider.addEventListener('mousemove', (event) => {
-        if (isDragging) {
-          const containerRect = container.getBoundingClientRect();
-          const offsetX = event.clientX - containerRect.left;
-          const percentage = Math.min(Math.max(offsetX / containerRect.width, 0), 1);
-          slider.style.width = `${percentage * 100}%`;
-          afterImg.style.clip = `rect(0, ${percentage * 100}%, auto, 0)`;
-        }
+  
+      slider.addEventListener('mousedown', () => {
+        isDragging = true;
+      });
+  
+      document.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+  
+      document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const rect = container.getBoundingClientRect();
+        let x = e.clientX - rect.left;
+        x = Math.max(0, Math.min(x, rect.width));
+        beforeWrapper.style.width = `${x}px`;
+        slider.style.left = `${x}px`;
       });
     });
   });
-  
   

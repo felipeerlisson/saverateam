@@ -10,6 +10,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/before-after.js/dist/before-after.min.js"></script>
+
+
 <!-- Font Awesome CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -182,11 +187,11 @@
                                       <h5 class="card-title">Treinos</h5>
                                       <p class="card-price">R$ 500,00</p>
                                       <ul class="list-unstyled">
-                                        <li><i class="fas fa-check-circle check-icon"></i> Treino individualizado.</li>
-                                        <li><i class="fas fa-check-circle check-icon"></i> Pode Treinar em Casa ou na Academia.</li>
-                                        <li><i class="fas fa-check-circle check-icon"></i> Vídeos  Explicativos das Execuções</li>
-                                        <li><i class="fas fa-check-circle check-icon"></i> 6 meses de acompanhamento.</li>
-                                        <li><i class="fas fa-check-circle check-icon"></i> Contato via Whatsapp</li>
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> Treino individualizado.</li>
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> Pode Treinar em Casa ou na Academia.</li>
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> Vídeos  Explicativos das Execuções</li>
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> 6 meses de acompanhamento.</li>
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> Contato via Whatsapp</li>
                                       </ul>
                                       <a href="#" class="btn btn-light choose-button" data-package="Treinos" data-price="R$ 500,00">ESCOLHER</a>
                                   </div>
@@ -236,7 +241,7 @@
         <div class="mt-3">
           <a href="https://api.whatsapp.com/message/VGMZSFQWC7RZA1?autoload=1&app_absent=0" class="text-decoration-none text-white">
             <i class="fas fa-ticket-alt fa-2x text-danger"></i>
-            <h3 class="mt-2">SUCO GRINGO - <span class="text-danger"> SAVERA</span></h3>
+            <h3 class="mt-2">APTECH SUCO GRINGO - <span class="text-danger"> SAVERA</span></h3>
           </a>
         </div>
       </div>
@@ -271,41 +276,29 @@
 
 
 <!-- Antes e Depois Section -->
-<section id="beforeAfter" class="bg-light text-dark text-center py-5 bg-dark">
+<section id="beforeAfter" class="text-dark text-center py-5 bg-dark">
   <div class="container anchor-offset-antesedepois">
     <h2 class="display-4 mb-4 text-white">Antes e Depois</h2>
     <p class="lead mb-5 text-white">Veja a transformação com nosso serviço.</p>
     <div class="row">
       <!-- Primeiro Resultado -->
       <div class="col-md-4 mb-4">
-        <div class="before-after-container">
-          <div class="before-after-wrapper">
-            <img src="img/antes1.png" alt="Antes 1" class="before-img">
-            <img src="img/depois1.png" alt="Depois 1" class="after-img">
-            <div class="before-after-slider"></div>
-          </div>
+        <div class="before-after-container" data-before="img/antes1.jpg" data-after="img/depois1.jpg">
+          <div class="before-after-slider"></div>
         </div>
         <p class="mt-2">Descrição do resultado 1.</p>
       </div>
       <!-- Segundo Resultado -->
       <div class="col-md-4 mb-4">
-        <div class="before-after-container">
-          <div class="before-after-wrapper">
-            <img src="img/antes1.png" alt="Antes 1" class="before-img">
-            <img src="img/depois1.png" alt="Depois 1" class="after-img">
-            <div class="before-after-slider"></div>
-          </div>
+        <div class="before-after-container" data-before="img/antes2.jpg" data-after="img/depois2.jpg">
+          <div class="before-after-slider"></div>
         </div>
         <p class="mt-2">Descrição do resultado 2.</p>
       </div>
       <!-- Terceiro Resultado -->
       <div class="col-md-4 mb-4">
-        <div class="before-after-container">
-          <div class="before-after-wrapper">
-            <img src="img/antes1.png" alt="Antes 1" class="before-img">
-            <img src="img/depois1.png" alt="Depois 1" class="after-img">
-            <div class="before-after-slider"></div>
-          </div>
+        <div class="before-after-container" data-before="img/antes3.jpg" data-after="img/depois3.jpg">
+          <div class="before-after-slider"></div>
         </div>
         <p class="mt-2">Descrição do resultado 3.</p>
       </div>
@@ -316,32 +309,37 @@
 
 
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5" >
-      <div class="container">
-          <h2 class="text-center text-white">Contact Me</h2>
-          <p class="text-center text-white">Feel free to reach out for collaborations or inquiries.</p>
-          <div class="row">
-              <div class="col-md-6 mx-auto">
-                  <form>
-                      <div class="form-group">
-                          <label for="name" class="text-white">Name</label>
-                          <input type="text" class="form-control" id="name" placeholder="Your Name">
-                      </div>
-                      <div class="form-group">
-                          <label for="email" class="text-white">Email</label>
-                          <input type="email" class="form-control" id="email" placeholder="Your Email">
-                      </div>
-                      <div class="form-group">
-                          <label for="message" class="text-white">Message</label>
-                          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-danger btn-block">Send Message</button>
-                  </form>
-              </div>
+
+
+
+
+<!-- Seção de Contato -->
+<section id="contact" class="py-5">
+  <div class="container">
+      <h2 class="text-center text-white">Entre em Contato</h2>
+      <p class="text-center text-white">Sinta-se à vontade para entrar em contato para colaborações ou consultas.</p>
+      <div class="row">
+          <div class="col-md-6 mx-auto">
+              <form>
+                  <div class="form-group">
+                      <label for="name" class="text-white">Nome</label>
+                      <input type="text" class="form-control" id="name" placeholder="Seu Nome">
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class="text-white">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Seu Email">
+                  </div>
+                  <div class="form-group">
+                      <label for="message" class="text-white">Mensagem</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Sua Mensagem"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-danger btn-block">Enviar Mensagem</button>
+              </form>
           </div>
       </div>
-  </section>
+  </div>
+</section>
+
 
 
   <!-- Modal -->
@@ -425,7 +423,7 @@
       <div class="col-md-4">
         <h5 class="text-white">Contato</h5>
         <p class="text-muted">Email: contato@savera.com.br</p>
-        <p class="text-muted">Telefone: (11) 1234-5678</p>
+        <p class="text-muted">Telefone: (38) 99948-8244</p>
       </div>
     </div>
   </div>
