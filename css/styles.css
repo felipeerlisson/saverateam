@@ -3,9 +3,30 @@ body {
     color: #fff;
 }
 
-.text-red {
-    color: red;
+/* CSS */
+.navbar-brand {
+  display: flex; /* Alinha itens em linha */
+  align-items: center; /* Alinha itens verticalmente ao centro */
 }
+
+.navbar-brand img {
+  margin-right: 10px; /* Espaço entre a logo e o texto */
+}
+
+.brand-text {
+  font-family: 'Bebas Neue', sans-serif; /* Fonte robusta */
+  font-size: 1.8rem; /* Ajuste o tamanho conforme necessário */
+  color: #fff; /* Cor do texto */
+  text-transform: uppercase; /* Torna o texto em maiúsculas */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  font-weight: bold; /* Adiciona peso ao texto */
+  line-height: 1; /* Ajusta a altura da linha para centralização */
+}
+
+.text-red {
+  color: #ff0000; /* Cor vermelha para 'Castro' */
+}
+
 
 
 /* Adiciona um espaço extra no topo para compensar a navbar fixa */
