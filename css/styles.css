@@ -329,6 +329,33 @@ ul.list-unstyled li {
 
 
 
+/* CSS para o botão de WhatsApp */
+.whatsapp-button {
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 20px; /* Distância da parte inferior da tela */
+  right: 20px; /* Distância do lado direito da tela */
+  background-color: #25D366; /* Cor do botão do WhatsApp */
+  color: white; /* Cor do ícone */
+  border-radius: 50%; /* Botão redondo */
+  width: 60px; /* Largura do botão */
+  height: 60px; /* Altura do botão */
+  display: flex; /* Flexbox para centralizar o ícone */
+  align-items: center; /* Alinhamento vertical do ícone */
+  justify-content: center; /* Alinhamento horizontal do ícone */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra leve */
+  font-size: 24px; /* Tamanho do ícone */
+  z-index: 1000; /* Garante que o botão fique sobre outros elementos */
+  text-decoration: none; /* Remove sublinhado do link */
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Cor do botão quando o cursor está sobre ele */
+}
+
+.whatsapp-button i {
+  margin: 0; /* Remove margem ao redor do ícone */
+}
+
 
 
 /* Estilo do Rodapé */
