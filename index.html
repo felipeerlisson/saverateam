@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savio Castro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
+
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">
+    <img src="img/savera logo.png" alt="Logo" width="50" height="50">
+    Sávio <span class="text-red">Castro</span>
+</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Programas</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#planos">Planos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#parcerias">Parcerias</a>
+        </li>
+
+          <li class="nav-item">
+              <a class="btn btn-outline-danger "  href="#">Contato</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+
+
+<!-- Logo Section -->
+<section class="logo-section" style="background: url('img/savera1.jpg') no-repeat center; background-size: cover; background-position: center 20%; height: 550px; filter: grayscale(100%);">
+  <div class="overlay"></div>
+  <div class="logo-container text-center">
+      <img src="img/savera logo.png" alt="Logo" class="logo">
+  </div>
+</section>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero bg-dark text-white text-center py-5">
+      <div class="container">
+          <h1 class="display-4">Bem vindo ao Savera Team</h1>
+          <p class="lead">Descubra aqui minha jornada, conquistas e serviços.</p>
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+      <div class="container">
+          <h2 class="text-center text-white">About Me</h2>
+          <p class="text-center text-white">I am a professional bodybuilder with a passion for fitness and health. Join me on my journey to achieve greatness.</p>
+      </div>
+  </section>
+
+<!-- Planos Section -->
+<section id="planos" class="py-5 bg-dark ">
+  <div class="container anchor-offset">
+      <h2 class="text-center text-white">Planos</h2>
+      <div class="carousel-container mb-3">
+          <a class="btn btn-danger btn-danger-setas" id="prevButton" role="button">
+              <i class="fas fa-chevron-left"></i>
+          </a>
+          <div id="productCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active">
+                      <div class="row">
+                          <!-- Product Card 1 -->
+                          <div class="col-md-4">
+                              <div class="card mb-4 bg-white">
+                                  <img src="img/savera logo.png" class="card-img-top" alt="Product 1" >
+                                  <div class="card-body">
+                                      <h5 class="card-title">Consultoria Bimestral</h5>
+                                      <p class="card-price text-danger">R$ 500,00</p>
+                                      <ul class="list-unstyled">
+                                          <li><i class="fas fa-check-circle check-icon"></i> Treino individualizado.</li>
+                                          <li><i class="fas fa-check-circle check-icon"></i> Pode Treinar em Casa ou na Academia.</li>
+                                          <li><i class="fas fa-check-circle check-icon"></i> Vídeos  Explicativos das Execuções</li>
+                                          <li><i class="fas fa-check-circle check-icon"></i> 2 meses de acompanhamento.</li>
+                                          <li><i class="fas fa-check-circle check-icon"></i> Contato via Whatsapp</li>
+
+                                      </ul>
+                                      <a href="#" class="btn btn-danger choose-button" data-package="Consultoria Bimestral" data-price="R$ 500,00">ESCOLHER</a>
+                                    </div>
+                              </div>
+                          </div>
+                          <!-- Product Card 2 -->
+                          <div class="col-md-4">
+                              <div class="card mb-4 bg-danger text-white">
+                                  <img src="img/savera logo.png" class="card-img-top" alt="Product 2">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Consultoria Trimestral</h5>
+                                      <p class="card-price">R$ 600,00</p>
+                                      <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> Treino individualizado.</li>
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> Pode Treinar em Casa ou na Academia.</li>
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> Vídeos  Explicativos das Execuções</li>
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> 3 meses de acompanhamento.</li>
+                                        <li><i class="fas fa-check-circle check-icon text-white"></i> Contato via Whatsapp</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-light choose-button" data-package="Consultoria Trimestral" data-price="R$ 600,00">ESCOLHER</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Product Card 3 -->
+                          <div class="col-md-4">
+                              <div class="card mb-4 bg-secondary text-white">
+                                  <img src="img/savera logo.png" class="card-img-top" alt="Product 3">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Consultoria Quadrimestral</h5>
+                                      <p class="card-price text-danger">R$ 700,00</p>
+                                      <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle check-icon"></i> Treino individualizado.</li>
+                                          <li><i class="fas fa-check-circle check-icon"></i> Pode Treinar em Casa ou na Academia.</li>
+                                          <li><i class="fas fa-check-circle check-icon"></i> Vídeos  Explicativos das Execuções</li>
+                                          <li><i class="fas fa-check-circle check-icon"></i> 4 meses de acompanhamento.</li>
+                                          <li><i class="fas fa-check-circle check-icon"></i> Contato via Whatsapp</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-danger choose-button" data-package="Consultoria Quadrimestral" data-price="R$ 700,00">ESCOLHER</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="carousel-item">
+                      <div class="row">
+                          <!-- Product Card 4 -->
+                          <div class="col-md-4">
+                              <div class="card mb-4 bg-white">
+                                  <img src="img/savera logo.png" class="card-img-top" alt="Product 4">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Consultoria Semestral</h5>
+                                      <p class="card-price text-danger">R$ 800,00</p>
+                                      <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle check-icon"></i> Treino individualizado.</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> Pode Treinar em Casa ou na Academia.</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> Vídeos  Explicativos das Execuções</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> 6 meses de acompanhamento.</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> Contato via Whatsapp</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-danger choose-button" data-package="Consultoria Semestral" data-price="R$ 800,00">ESCOLHER</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Product Card 5 -->
+                          <div class="col-md-4">
+                              <div class="card mb-4 bg-danger text-white">
+                                  <img src="img/savera logo.png" class="card-img-top" alt="Product 5">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Treinos</h5>
+                                      <p class="card-price">R$ 500,00</p>
+                                      <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle check-icon"></i> Treino individualizado.</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> Pode Treinar em Casa ou na Academia.</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> Vídeos  Explicativos das Execuções</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> 6 meses de acompanhamento.</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> Contato via Whatsapp</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-light choose-button" data-package="Treinos" data-price="R$ 500,00">ESCOLHER</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Product Card 6 -->
+                          <div class="col-md-4">
+                              <div class="card mb-4 bg-secondary text-white">
+                                  <img src="img/savera logo.png" class="card-img-top" alt="Product 6">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Alimentação</h5>
+                                      <p class="card-price text-danger">R$ 700,00</p>
+                                      <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle check-icon"></i> Treino individualizado.</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> Pode Treinar em Casa ou na Academia.</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> Vídeos  Explicativos das Execuções</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> 6 meses de acompanhamento.</li>
+                                        <li><i class="fas fa-check-circle check-icon"></i> Contato via Whatsapp</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-danger choose-button" data-package="Alimentação" data-price="R$ 500,00">ESCOLHER</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <a class="btn btn-danger btn-danger-setas" id="nextButton" role="button">
+              <i class="fas fa-chevron-right"></i>
+          </a>
+      </div>
+  </div>
+</section>
+
+
+<!-- Parcerias Section -->
+<section id="parcerias" class="py-5 text-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Parcerias</h2>
+    <p class="text-center mb-5">Confira nossas parcerias e aproveite nossos cupons exclusivos.</p>
+    <div class="row">
+      <!-- Primeiro Parceiro -->
+      <div class="col-md-4 text-center mb-4">
+        <div class="partner-img-container">
+          <img src="img/SaveraApTech.jpeg" alt="Parceiro 1" class="img-fluid">
+        </div>
+        <div class="mt-3">
+          <a href="https://api.whatsapp.com/message/VGMZSFQWC7RZA1?autoload=1&app_absent=0" class="text-decoration-none text-white">
+            <i class="fas fa-ticket-alt fa-2x text-danger"></i>
+            <h3 class="mt-2">SUCO GRINGO - <span class="text-danger"> SAVERA</span></h3>
+          </a>
+        </div>
+      </div>
+      <!-- Segundo Parceiro -->
+      <div class="col-md-4 text-center mb-4">
+        <div class="partner-img-container">
+          <img src="img/Saverafulllife.jpeg" alt="Parceiro 2" class="img-fluid">
+        </div>
+        <div class="mt-3">
+          <a href="https://fullifenutrition.com.br/" class="text-decoration-none text-white">
+            <i class="fas fa-ticket-alt fa-2x text-danger"></i>
+            <h3 class="mt-2">FULLIFE NUTRITION - <span class="text-danger"> #SAVERA10</span></h3>
+          </a>
+        </div>
+      </div>
+      <!-- Terceiro Parceiro -->
+      <div class="col-md-4 text-center mb-4">
+        <div class="partner-img-container">
+          <img src="img/saveraBearon.jpg" alt="Parceiro 3" class="img-fluid">
+        </div>
+        <div class="mt-3">
+          <a href="https://bearon.site/" class="text-decoration-none text-white">
+            <i class="fas fa-ticket-alt fa-2x text-danger"></i>
+            <h3 class="mt-2">BEARON BRAND - <span class="text-danger"> SAVERA10</span></h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Antes e Depois Section -->
+<section id="beforeAfter" class="hero bg-light text-dark text-center py-5 bg-dark">
+  <div class="container">
+    <h2 class="display-4 mb-4">Antes e Depois</h2>
+    <p class="lead mb-5">Veja a transformação com nosso serviço.</p>
+    <div class="row">
+      <!-- Primeiro Resultado -->
+      <div class="col-md-4 mb-4">
+        <div class="before-after-container">
+          <div class="before-after-wrapper">
+            <img src="img/savera1.jpg" alt="Antes 1" class="before-img">
+            <img src="img/savio fazer caricatura.png" alt="Depois 1" class="after-img">
+            <div class="before-after-slider"></div>
+          </div>
+        </div>
+        <p class="mt-2">Descrição do resultado 1.</p>
+      </div>
+      <!-- Segundo Resultado -->
+      <div class="col-md-4 mb-4">
+        <div class="before-after-container">
+          <div class="before-after-wrapper">
+            <img src="before2.jpg" alt="Antes 2" class="before-img">
+            <img src="after2.jpg" alt="Depois 2" class="after-img">
+            <div class="before-after-slider"></div>
+          </div>
+        </div>
+        <p class="mt-2">Descrição do resultado 2.</p>
+      </div>
+      <!-- Terceiro Resultado -->
+      <div class="col-md-4 mb-4">
+        <div class="before-after-container">
+          <div class="before-after-wrapper">
+            <img src="before3.jpg" alt="Antes 3" class="before-img">
+            <img src="after3.jpg" alt="Depois 3" class="after-img">
+            <div class="before-after-slider"></div>
+          </div>
+        </div>
+        <p class="mt-2">Descrição do resultado 3.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5" >
+      <div class="container">
+          <h2 class="text-center text-white">Contact Me</h2>
+          <p class="text-center text-white">Feel free to reach out for collaborations or inquiries.</p>
+          <div class="row">
+              <div class="col-md-6 mx-auto">
+                  <form>
+                      <div class="form-group">
+                          <label for="name" class="text-white">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Your Name">
+                      </div>
+                      <div class="form-group">
+                          <label for="email" class="text-white">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Your Email">
+                      </div>
+                      <div class="form-group">
+                          <label for="message" class="text-white">Message</label>
+                          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-danger btn-block">Send Message</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="chooseModal" tabindex="-1" aria-labelledby="chooseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chooseModalLabel">Escolher Pacote</h5>
+          <button type="button" class="btn-close fas fa-times" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="chooseForm">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Telefone com DDD</label>
+              <input type="tel" class="form-control" id="phone" placeholder="(99) 99999-9999" required>
+            </div>
+            <div class="mb-3">
+              <label for="package" class="form-label">Pacote Escolhido</label>
+              <input type="text" class="form-control" id="package" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="paymentMethod" class="form-label">Forma de Pagamento</label>
+              <select class="form-select" id="paymentMethod" required>
+                <option value="" selected disabled>Escolha a forma de pagamento</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Boleto">Boleto</option>
+                <option value="Pix">Pix</option>
+              </select>
+            </div>
+            <div class="mb-3" id="installmentsContainer" style="display: none;">
+              <label for="installments" class="form-label">Parcelas</label>
+              <select class="form-select" id="installments">
+                <option value="1">1x</option>
+                <option value="2">2x</option>
+                <option value="3">3x</option>
+                <option value="4">4x</option>
+                <option value="5">5x</option>
+                <option value="6">6x</option>
+                <option value="7">7x</option>
+                <option value="8">8x</option>
+                <option value="9">9x</option>
+                <option value="10">10x</option>
+                <option value="11">11x</option>
+                <option value="12">12x</option>
+              </select>
+            </div>
+            <div class="text-end">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
+              <button type="submit" class="btn btn-danger">ESCOLHER</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer Section -->
+<footer class="footer bg-dark py-4">
+  <div class="container">
+    <div class="row">
+      <!-- About Us Section -->
+      <div class="col-md-4">
+        <h5 class="text-white">Sobre Nós</h5>
+        <p class="text-muted">A Savera é uma empresa dedicada a oferecer os melhores planos e serviços para o seu bem-estar.</p>
+      </div>
+      <!-- Links Section -->
+      <div class="col-md-4">
+        <h5 class="text-white">Links Úteis</h5>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="text-muted">Home</a></li>
+          <li><a href="#planos" class="text-muted">Planos</a></li>
+          <li><a href="#contact" class="text-muted">Contato</a></li>
+        </ul>
+      </div>
+      <!-- Contact Section -->
+      <div class="col-md-4">
+        <h5 class="text-white">Contato</h5>
+        <p class="text-muted">Email: contato@savera.com.br</p>
+        <p class="text-muted">Telefone: (11) 1234-5678</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom text-center py-3 text-muted">
+    &copy; 2024 Savera. Todos os direitos reservados.
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+  <!-- jQuery (para Bootstrap 4 e anteriores, se necessário) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Popper.js (para Bootstrap 5) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
